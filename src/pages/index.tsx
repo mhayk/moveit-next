@@ -3,11 +3,16 @@ import { CountDown } from "../components/Countdown";
 import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from '../components/Profile';
 
-import style from '../styles/pages/Home.module.css'
+import Head from 'next/head';
+
+import style from '../styles/pages/Home.module.css';
 
 export default function Home() {
   return (
     <div className={style.container}>
+      <Head>
+        <title>Start | move.it</title>
+      </Head>
       <ExperienceBar />
 
       <section>
